@@ -24,7 +24,7 @@ const HalloweenHeader = () => {
 
       <div className="relative z-10">
         <h1 className="spooky-text text-6xl md:text-8xl text-primary mb-4 animate-pulse">
-          🎃 Horror Series Studio 🎃
+          🎃 Хэллоуинские Страхи 🎃
         </h1>
         <div className="horror-text text-2xl md:text-3xl text-accent mb-8 spooky-flicker">
           Создавай Жуткие Сериалы
