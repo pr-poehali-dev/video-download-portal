@@ -10,25 +10,8 @@ const DownloadSection = () => {
     await new Promise((resolve) => setTimeout(resolve, 2000));
     setDownloading(false);
 
-    // Create and download mock data
-    const data = {
-      project: "Horror Series Studio",
-      series: ["Проклятый Особняк", "Лес Теней", "Городские Легенды"],
-      exportDate: new Date().toISOString(),
-      type: "Halloween Project Export",
-    };
-
-    const blob = new Blob([JSON.stringify(data, null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "horror-series-project.json";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    // Open Yandex Disk link in new tab
+    window.open("https://disk.yandex.ru/d/nXfdbqH6BRO9bQ", "_blank");
   };
 
   return (
